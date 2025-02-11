@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Carga de usuarios</h2>
+    <form id="formulario-usuario">
+        <div class="form-cuadro">
+            <div class="form-grupo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+            <div class="form-grupo">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="form-grupo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+            </div>
+        </div>
+        <div class="form-cuadro">
+            <div class="form-grupo">
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" required>
+            </div>
+            <div class="form-grupo">
+                <label for="telefono">Teléfono:</label>
+                <input type="text" id="telefono" required>
+            </div>
+        </div>
+        <div class="form-cuadro">
+            <div class="form-grupo">
+                <label for="empresa">Empresa:</label>
+                <input type="text" id="empresa" required>
+            </div>
+            <div class="form-grupo">
+                <button type="submit" class="btn-agregar">Agregar Usuario</button>
+            </div>
+        </div>
+    </form>    
+    
+    <hr>
+
+    <div class="user-list">
+    <h1>Usuarios en lista</h1>
+
+    <input type="text" id="buscador" placeholder="Busqueda de usuarios">
+    </div>
+    
+    <div id="usuarios-lista"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
